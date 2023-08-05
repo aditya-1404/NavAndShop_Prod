@@ -28,23 +28,23 @@ const Item = (props) => {
       <div class="card">
         <img src={image} class="h-80 card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title">{props.data.name}</h5>
+          <h5 class="card-title font-bold">{props.data.name}</h5>
           <p class="card-text">Price:{props.data.price}</p>
           <p class="card-text">Gender:{props.data.Gender}</p>
           <p class="card-text">Colour:{props.data.Colour}</p>
           <button
             id={`addcart${props.data.id}`}
-            className="btn"
+            className="btn mt-2"
             onClick={Addbtn}
           >
             Add to cart
           </button>
-          <div id={`aaddcart${props.data.id}`} style={{ display: "none" }}>
-            <button className="btn btn-primary">
+          <div className="mt-2" id={`aaddcart${props.data.id}`} style={{ display: "none" }}>
+            <button className="btn btn-primary mr-1">
               <AiOutlineMinus onClick={subVal} />
             </button>
             {cartItems[props.data.id]}
-            <button className="btn btn-primary">
+            <button className="btn btn-primary ml-1">
               <AiOutlinePlus onClick={addVal} />
             </button>
           </div>

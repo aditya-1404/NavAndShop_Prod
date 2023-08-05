@@ -21,8 +21,9 @@ export default function ARShop(props) {
   }
   // car = cartItems;
   return (
-    <div className="funbg" style={{'height':'91vh',overflow:'hidden'}}>
+    <div className="funbg" style={{'height':'91vh',overflow:'hidden',background:"white"}}>
       <div
+        className="mt-2"
         onClick={() => setShow(!show)}
         style={{ cursor: "pointer", position: "relative", left: "1470px" }}
       >
@@ -33,11 +34,11 @@ export default function ARShop(props) {
           {count}
         </span>
       </div>
-      <div className="gender-filter">
+      {/* <div className="gender-filter">
         <button onClick={() => setactiveButton("Men")}>Men</button>
         <button onClick={() => setactiveButton("Women")}>Women</button>
         <button onClick={() => setactiveButton("Children")}>Children</button>
-      </div>
+      </div> */}
       <div className="container d-flex">
         {props.items.map((item) => {
           {
