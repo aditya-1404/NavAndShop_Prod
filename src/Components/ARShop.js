@@ -9,7 +9,7 @@ import Cartitem from "./cartItem";
 
 // var car = { 1: 0, 2: 0, 3: 0 };
 export default function ARShop(props) {
-  var sum=0
+  var sum = 0;
   const [activeButton, setactiveButton] = useState("Men");
   const { cartItems, setCart } = useContext(Cart);
   const [val, setVal] = useState(0);
@@ -21,7 +21,10 @@ export default function ARShop(props) {
   }
   // car = cartItems;
   return (
-    <div className="funbg" style={{'height':'91vh',overflow:'hidden',background:"white"}}>
+    <div
+      className="funbg"
+      style={{ height: "91vh", overflow: "hidden", background: "white" }}
+    >
       <div
         className="mt-2"
         onClick={() => setShow(!show)}
@@ -34,48 +37,51 @@ export default function ARShop(props) {
           {count}
         </span>
       </div>
-      {/* <div className="gender-filter">
+      <div className="gender-filter">
         <button onClick={() => setactiveButton("Men")}>Men</button>
         <button onClick={() => setactiveButton("Women")}>Women</button>
         <button onClick={() => setactiveButton("Children")}>Children</button>
-      </div> */}
+      </div>
       <div className="container d-flex">
         {props.items.map((item) => {
           {
             //  console.log(item.Gender);
-            return <Item data={item} />;
+            {
+              /* return <Item data={item} />; */
+            }
+
+            return (
+              <>
+                {activeButton == "Men" && item.Gender == "Men" && (
+                  <Item
+                    data={item}
+                    val={val}
+                    setVal={setVal}
+                    cartItems={cartItems}
+                    setCart={setCart}
+                  />
+                )}
+                {activeButton == "Women" && item.Gender == "Women" && (
+                  <Item
+                    data={item}
+                    val={val}
+                    setVal={setVal}
+                    cartItems={cartItems}
+                    setCart={setCart}
+                  />
+                )}
+                {activeButton == "Children" && item.Gender == "Children" && (
+                  <Item
+                    data={item}
+                    val={val}
+                    setVal={setVal}
+                    cartItems={cartItems}
+                    setCart={setCart}
+                  />
+                )}
+              </>
+            );
           }
-          return (
-            <>
-              {activeButton == "Men" && item.Gender == "Men" && (
-                <Item
-                  data={item}
-                  val={val}
-                  setVal={setVal}
-                  cartItems={cartItems}
-                  setCart={setCart}
-                />
-              )}
-              {activeButton == "Women" && item.Gender == "Women" && (
-                <Item
-                  data={item}
-                  val={val}
-                  setVal={setVal}
-                  cartItems={cartItems}
-                  setCart={setCart}
-                />
-              )}
-              {activeButton == "Children" && item.Gender == "Children" && (
-                <Item
-                  data={item}
-                  val={val}
-                  setVal={setVal}
-                  cartItems={cartItems}
-                  setCart={setCart}
-                />
-              )}
-            </>
-          );
         })}
       </div>
       <div>
@@ -136,10 +142,10 @@ export default function ARShop(props) {
                           Subtotal
                         </p>
                         <p className="text-base leading-none text-gray-800">
-                        {props.items.map((item) => {
-                          sum+=cartItems[item.id]*item.price;
-                      })}
-                        ${sum}
+                          {props.items.map((item) => {
+                            sum += cartItems[item.id] * item.price;
+                          })}
+                          ${sum}
                         </p>
                       </div>
                       <div className="flex items-center justify-between pt-5">
@@ -165,7 +171,7 @@ export default function ARShop(props) {
                           Total
                         </p>
                         <p className="text-2xl font-bold leading-normal text-right text-gray-800">
-                          ${sum+65}
+                          ${sum + 65}
                         </p>
                       </div>
                       <button
