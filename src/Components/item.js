@@ -12,21 +12,21 @@ const Item = (props) => {
     document.getElementById(event.target.id).style.display = "none";
     document.getElementById(`a${event.target.id}`).style.display = "block";
     cartItems[props.data.id]=1
-    setCart({1:cartItems[1],2:cartItems[2],3:cartItems[3]});
+    setCart({1:cartItems[1],2:cartItems[2],3:cartItems[3],4:cartItems[4],5:cartItems[5],6:cartItems[6],7:cartItems[7],8:cartItems[8],9:cartItems[9],10:cartItems[10],11:cartItems[11],12:cartItems[12]});
   };
   const addVal = (event) => {
     cartItems[props.data.id]+=1
     console.log(cartItems)
-    setCart({1:cartItems[1],2:cartItems[2],3:cartItems[3]});
+    setCart({1:cartItems[1],2:cartItems[2],3:cartItems[3],4:cartItems[4],5:cartItems[5],6:cartItems[6],7:cartItems[7],8:cartItems[8],9:cartItems[9],10:cartItems[10],11:cartItems[11],12:cartItems[12]});
   };
   const subVal = (event) => {
     cartItems[props.data.id] -= 1;
-    setCart({1:cartItems[1],2:cartItems[2],3:cartItems[3]});
+    setCart({1:cartItems[1],2:cartItems[2],3:cartItems[3],4:cartItems[4],5:cartItems[5],6:cartItems[6],7:cartItems[7],8:cartItems[8],9:cartItems[9],10:cartItems[10],11:cartItems[11],12:cartItems[12]});
   };
   return (
     <div class="card-wrapper">
       <div class="card">
-        <img src={image} class="h-80 card-img-top" alt="..." />
+        <img src={props.data.Img} class="h-80 card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title font-bold">{props.data.name}</h5>
           <p class="card-text">Price:{props.data.price}</p>

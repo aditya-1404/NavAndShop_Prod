@@ -1,12 +1,12 @@
 import React from "react";
-import image from "../images/item.png";
+// import image from "../images/item.png";
 
 export default function Cartitem(props) {
   return (
       <div className="md:flex  items-center py-8 border-t border-gray-200">
         <div className="w-1/4">
           <img
-            src={image}
+            src={props.data.Img}
             alt
             className="w-full h-full object-center object-cover"
           />

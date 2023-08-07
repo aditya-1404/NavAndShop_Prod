@@ -22,13 +22,13 @@ export default function ARShop(props) {
   // car = cartItems;
   return (
     <div
-      className="funbg"
-      style={{ height: "91vh", overflow: "hidden", background: "white" }}
+      className="funbg container"
+      style={{ height: "91vh", background: "white" }}
     >
       <div
         className="mt-2"
         onClick={() => setShow(!show)}
-        style={{ cursor: "pointer", position: "relative", left: "1470px" }}
+        style={{ cursor: "pointer", position: "relative",float:"right" }}
       >
         <i className="fa" style={{ "font-size": "30px" }}>
           &#xf07a;
