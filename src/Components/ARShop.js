@@ -51,7 +51,7 @@ export default function ARShop(props) {
             }
 
             return (
-              <div className="prod_container">
+              <>
                 {activeButton == "Men" && item.Gender == "Men" && (
                   <Item
                     data={item}
@@ -79,7 +79,7 @@ export default function ARShop(props) {
                     setCart={setCart}
                   />
                 )}
-              </div>
+              </>
             );
           }
         })}
