@@ -42,7 +42,7 @@ export default function ARShop(props) {
         <button onClick={() => setactiveButton("Women")}>Women</button>
         <button onClick={() => setactiveButton("Children")}>Children</button>
       </div>
-      <div className="container d-flex">
+      <div className="container d-grid grid-cols-4">
         {props.items.map((item) => {
           {
             //  console.log(item.Gender);
