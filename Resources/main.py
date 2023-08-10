@@ -20,7 +20,7 @@ def VideoCamera():
 
     detector = PoseDetector()
 
-    shirtFolderPath = "Shirts"
+    shirtFolderPath = "Resources/Shirts"
     listShirts = os.listdir(shirtFolderPath)
 
     fixedRatio = 262 / 190  # widthOfShirt/widthOfPoint11to12
