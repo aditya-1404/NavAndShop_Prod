@@ -35,3 +35,13 @@
   margin-bottom: 10px;
 }
   
+.AR-button{
+  border: solid 3px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.AR-button:hover {
+  border: none;
+  border-bottom: 5px solid;
+  background-color: aquamarine;
+}
