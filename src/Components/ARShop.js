@@ -7,7 +7,6 @@ import "../fun.css";
 import { Cart } from "../Context/cart";
 import Cartitem from "./cartItem";
 
-// var car = { 1: 0, 2: 0, 3: 0 };
 export default function ARShop(props) {
   var sum = 0;
   const [activeButton, setactiveButton] = useState("Men");
@@ -19,7 +18,7 @@ export default function ARShop(props) {
   for (const prop in cartItems) {
     count += cartItems[prop];
   }
-  // car = cartItems;
+
   return (
     <div
       className="funbg container"
@@ -37,6 +36,9 @@ export default function ARShop(props) {
           {count}
         </span>
       </div>
+      <button className="AR-button">
+        <Link to={"http://127.0.0.1:3500"}>Go to Ar shop</Link>
+      </button>
       <div className="gender-filter">
         <button onClick={() => setactiveButton("Men")}>Men</button>
         <button onClick={() => setactiveButton("Women")}>Women</button>
@@ -45,11 +47,6 @@ export default function ARShop(props) {
       <div className="container d-grid grid-cols-4">
         {props.items.map((item) => {
           {
-            //  console.log(item.Gender);
-            {
-              /* return <Item data={item} />; */
-            }
-
             return (
               <>
                 {activeButton == "Men" && item.Gender == "Men" && (
@@ -174,10 +171,7 @@ export default function ARShop(props) {
                           ${sum + 65}
                         </p>
                       </div>
-                      <button
-                        // onClick={() => setShow(!show)}
-                        className="text-base leading-none w-full py-5 bg-gray-800 border-gray-800 border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-white"
-                      >
+                      <button className="text-base leading-none w-full py-5 bg-gray-800 border-gray-800 border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-white">
                         <Link to="/qrpage" cartItems={cartItems}>
                           Checkout
                         </Link>
