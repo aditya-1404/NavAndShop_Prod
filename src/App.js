@@ -25,7 +25,7 @@ function App() {
       price: "100",
       Gender: "Men",
       Colour: "Black",
-      Img:"https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+      Img: "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ function App() {
       price: "200",
       Gender: "Women",
       Colour: "Black",
-      Img:"https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-02.jpg"
+      Img: "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-02.jpg",
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ function App() {
       price: "300",
       Gender: "Men",
       Colour: "Grey",
-      Img:"https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-03.jpg"
+      Img: "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-03.jpg",
     },
     {
       id: 4,
@@ -49,7 +49,7 @@ function App() {
       price: "300",
       Gender: "Women",
       Colour: "Light Brown",
-      Img:"https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-04.jpg"
+      Img: "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-04.jpg",
     },
     {
       id: 5,
@@ -57,7 +57,7 @@ function App() {
       price: "300",
       Gender: "Children",
       Colour: "Blue,White,Grey",
-      Img:"https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-06.jpg"
+      Img: "https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-06.jpg",
     },
     {
       id: 6,
@@ -65,7 +65,7 @@ function App() {
       price: "100",
       Gender: "Men",
       Colour: "Green,Yellow",
-      Img:"https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/f1.jpg?raw=true"
+      Img: "https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/f1.jpg?raw=true",
     },
     {
       id: 7,
@@ -73,7 +73,7 @@ function App() {
       price: "120",
       Gender: "Men",
       Colour: "Cream",
-      Img:"https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/f2.jpg?raw=true"
+      Img: "https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/f2.jpg?raw=true",
     },
     {
       id: 8,
@@ -81,7 +81,7 @@ function App() {
       price: "300",
       Gender: "Men",
       Colour: "Orange,Blue",
-      Img:"https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/f6.jpg?raw=true"
+      Img: "https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/f6.jpg?raw=true",
     },
     {
       id: 9,
@@ -89,7 +89,7 @@ function App() {
       price: "200",
       Gender: "Women",
       Colour: "Grey",
-      Img:"https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/f8.jpg?raw=true"
+      Img: "https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/f8.jpg?raw=true",
     },
     {
       id: 10,
@@ -97,7 +97,7 @@ function App() {
       price: "100",
       Gender: "Children",
       Colour: "Green",
-      Img:"https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/n4.jpg?raw=true"
+      Img: "https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/n4.jpg?raw=true",
     },
     {
       id: 11,
@@ -105,7 +105,7 @@ function App() {
       price: "400",
       Gender: "Children",
       Colour: "Green",
-      Img:"https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/n5.jpg?raw=true"
+      Img: "https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/n5.jpg?raw=true",
     },
     {
       id: 12,
@@ -113,8 +113,8 @@ function App() {
       price: "100",
       Gender: "Children",
       Colour: "Grey",
-      Img:"https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/n6.jpg?raw=true"
-    }
+      Img: "https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website/blob/main/img/products/n6.jpg?raw=true",
+    },
   ];
   const games = [
     {
