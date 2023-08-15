@@ -28,7 +28,7 @@ export default function ARShop(props) {
       <div
         className="mt-2"
         onClick={() => setShow(!show)}
-        style={{ cursor: "pointer", position: "relative",float:"right" }}
+        style={{ cursor: "pointer", position: "relative", float: "right" }}
       >
         <i className="fa" style={{ "font-size": "30px" }}>
           &#xf07a;
