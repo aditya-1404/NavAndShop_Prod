@@ -87,7 +87,7 @@ function About() {
       <h2 style={headingStyles}>Contact Us</h2>
       <p style={paragraphStyles}>
         Have questions or feedback? We'd love to hear from you! Reach out to our{" "}
-        <a href="mailto:support@email.com" style={linkStyles}>
+        <a href="mailto:shivamverma2908@gmail.com" style={linkStyles}>
           customer support team
         </a>
         .
